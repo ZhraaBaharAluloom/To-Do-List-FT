@@ -9,7 +9,7 @@ const TaskList = () => {
   ));
 
   return (
-    <div>
+    <div className="container">
       <h3>To Do List</h3>
       {taskList}
     </div>
