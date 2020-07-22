@@ -16,11 +16,11 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div className="container ">
       <AddButtonStyled>
         <form onSubmit={handleSubmit}>
-          <div className="form-row">
-            <div className="col-4">
+          <div className="row  d-flex justify-content-center align-items-center">
+            <div className="col-6">
               <input
                 required
                 name="task"

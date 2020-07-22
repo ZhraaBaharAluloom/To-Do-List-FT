@@ -20,7 +20,7 @@ class TaskStore {
         updatedTask
       );
       const task = this.tasks.find((task) => task.id === updatedTask.id);
-      task.status = !updatedTask.status;
+      task.todo = !updatedTask.todo;
     } catch (error) {
       console.log(error);
     }
@@ -30,6 +30,14 @@ class TaskStore {
     try {
       const res = await axios.get("http://localhost:8000/tasks");
       this.tasks = res.data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  deleteTask = async (taskId) => {
+    try {
+      await axios.delete(`http://localhost:8000/tasks/${taskId}`);
+      this.tasks = this.tasks.filter((task) => task.id !== +taskId);
     } catch (error) {
       console.log(error);
     }

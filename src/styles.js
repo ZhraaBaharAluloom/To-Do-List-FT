@@ -15,3 +15,11 @@ export const DoneButtonStyled = styled.p`
   display: flex !important;
   padding: 4px;
 `;
+
+export const DeleteButtonStyled = styled.p`
+  float: right;
+  color: red;
+  justify-content: space-between !important;
+  display: flex !important;
+  padding: 4px;
+`;
