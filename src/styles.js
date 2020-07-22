@@ -7,3 +7,11 @@ export const AddButtonStyled = styled.div`
   width: 90%;
   border-radius: 6px;
 `;
+
+export const DoneButtonStyled = styled.p`
+  float: right;
+  color: #028090;
+  justify-content: space-between !important;
+  display: flex !important;
+  padding: 4px;
+`;
